@@ -8,7 +8,7 @@
   - Email: student@nure.ua
 
 - **Єгор Задорожний**, група ПЗПІ-25-6  
-  - Email: student@nure.ua
+  - Email: yehor.zadorozhnyi@nure.ua
 
 - **Патока Вікторія**, група ПЗПІ-25-6  
   - Email: student@nure.ua
