@@ -1,10 +1,17 @@
-// Як будь-який користувач, я хочу підключити свої Apple Watch, для подальшого відстежування моїх фізичних дій.
-function connectAppleWatch() {
-    // Логіка підключення Apple Watch
-    console.log("Підключення Apple Watch...");
-    // Тут можна додати код для взаємодії з API Apple Watch або Bluetooth
-    console.log("Apple Watch успішно підключені!");
-}
+console.log("Hello, World!");
 
-// Виклик функції
-connectAppleWatch();
+function hello() {
+    console.log("Hello, World!");
+}
+hello();
+
+function factorial(n) {
+    if (n < 0) {
+        return null;
+    }
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+console.log(factorial(5));
