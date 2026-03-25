@@ -1,0 +1,19 @@
+# Зависимости (самая важная часть)
+node_modules/
+
+# Логи ошибок
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Переменные окружения (секретные ключи)
+.env
+.env.local
+
+# Папки сборки (build/dist)
+dist/
+build/
+
+# Настройки редакторов (VS Code, WebStorm)
+.vscode/
+.idea/
