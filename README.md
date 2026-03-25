@@ -14,7 +14,7 @@ PRG fitness app
 
 ## Технології
 
-- Мова програмування: C++ C# Swift
+- Мова програмування: C++ C# Swift JS
 
 - IDE: Visual Studio Code 1.110
 
