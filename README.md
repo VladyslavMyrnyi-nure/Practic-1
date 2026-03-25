@@ -17,17 +17,17 @@ RPG fitness app - рпг гра для платформи IOS, розвиток 
 
 - VCS: Git 2.52 + GitHub
 
-- AI-асистент: GitHub Copilot Student / Codeium
+- AI-асистент: GitHub Copilot Student
 
 ## Встановлення та запуск
 
 ```bash
 
-git clone https://github.com/username/project.git
+git clone https://github.com/VladyslavMyrnyi-nure/Practic-1
 
-cd project
+cd Practic-1
 
-python main.py
+node script.js
 
 ```
 
