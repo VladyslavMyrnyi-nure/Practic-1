@@ -21,7 +21,7 @@
 
 ## Технології
 
-- Мова програмування: JavaScript  
+- Мова програмування: JavaScript, C++, C#, Swift
 - IDE: Visual Studio Code 1.110  
 - VCS: Git 2.47 + GitHub  
 - AI-асистент: GitHub Copilot Student / Codeium  
