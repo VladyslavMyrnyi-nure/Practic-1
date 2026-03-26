@@ -1,33 +1,36 @@
 # Назва проєкту
 
-RPG fitness app - рпг гра для платформи IOS, розвиток та прокачка персонажа реальними даними
-зчитуваними через apple watch.
+PRG fitness app, застосунок, який вимірює ваші фізичні параметри та доповнює тренування цікавими ігровими фічами.
 
-## Автори
+## Автор
 
-- **Мирний Владислав**,**Патока Вікторія**, **Білоус Артем**, **Набережних Максим**, **Задорожний Єгор**, група ПЗПІ-25-6
+Група ПЗПІ-25-6
 
-- Emails: vladyslav.myrnyi@nure.ua, artem.bilous1@nure.ua, yehor.zadorozhnyi@nure.ua, viktoriia.patoka@nure.ua, maksym.naberezhnykh@nure.ua 
+Владислав Мирний - vladyslav.myrnyi@nure.ua
+Патока Вікторія - viktoriia.patoka@nure.ua
+Задорожний Єгор - yehor.zadorozhnyi@nure.ua
+Набережних Максим - maksym.naberezhnykh@nure.ua
+Білоус Артем - artem.bilous1@nure.ua
 
 ## Технології
 
-- Мова програмування: JS
+- Мова програмування: C++, C#, Swift, JS
 
 - IDE: Visual Studio Code 1.110
 
-- VCS: Git 2.52 + GitHub
+- VCS: Git 2.47 + GitHub
 
-- AI-асистент: GitHub Copilot Student / Codeium
+- AI-асистент: GitHub Copilot Student
 
 ## Встановлення та запуск
 
 ```bash
 
-git clone https://github.com/username/project.git
+git clone https://github.com/VladyslavMyrnyi-nure/Practic-1
 
-cd project
+cd Practic-1
 
-python main.py
+node script.js
 
 ```
 
