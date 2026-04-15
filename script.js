@@ -13,7 +13,7 @@ function bubbleSort(arr) {
     };
     return arr;
 };
-
+}
 // Приклад використання
 let array = [64, 34, 25, 12, 22, 11, 90];
 console.log("Невідсортований масив: " + array);
