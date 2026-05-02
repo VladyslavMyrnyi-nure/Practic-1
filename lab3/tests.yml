@@ -1,0 +1,43 @@
+name: Unit Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore CharacterProject.sln
+
+      - name: Build
+        run: dotnet build CharacterProject.sln --no-restore --configuration Release
+
+      - name: Run tests with coverage
+        run: >
+          dotnet test CharacterProject.sln
+          --no-build
+          --configuration Release
+          /p:CollectCoverage=true
+          /p:CoverletOutputFormat=lcov
+          /p:CoverletOutput=./coverage/lcov.info
+          /p:Threshold=80
+          /p:ThresholdType=line
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: CharacterLib.Tests/coverage/
