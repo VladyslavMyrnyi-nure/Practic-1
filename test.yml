@@ -1,0 +1,29 @@
+name: Lab 3 Continuous Integration
+
+on:
+  push:
+    branches:
+      - feature/Zadorozhnyi
+    paths:
+      - 'Lab_3/**'
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: ./Lab_3
+        run: npm install
+
+      - name: Run tests with coverage
+        working-directory: ./Lab_3
+        run: npm test
