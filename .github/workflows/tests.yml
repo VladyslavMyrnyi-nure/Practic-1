@@ -1,16 +1,10 @@
-name: Unit Tests
-
-on:
-  push:
-    branches:
-      - feature/Zadorozhnyi
-  pull_request:
-    branches:
-      - feature/Zadorozhnyi
-
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Lab_3
 
     steps:
       - uses: actions/checkout@v4
@@ -20,5 +14,4 @@ jobs:
           node-version: '20'
 
       - run: npm ci
-
-      - run: npm test -- --coverage --coverageThreshold='{"global":{"lines":80}}'
+      - run: npm test -- --coverage --coverageThreshold='{"global":{"lines":80}}'пше 
