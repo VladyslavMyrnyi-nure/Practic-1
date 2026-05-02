@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1777721200801" clover="3.2.0">
+  <project timestamp="1777721200801" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="26" coveredconditionals="24" methods="4" coveredmethods="4" elements="52" coveredelements="50" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
+    <file name="character.js" path="C:\Users\Vlad\Desktop\Practic-1\Lab_3\character.js">
+      <metrics statements="22" coveredstatements="22" conditionals="26" coveredconditionals="24" methods="4" coveredmethods="4"/>
+      <line num="7" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="13" count="8" type="cond" truecount="3" falsecount="1"/>
+      <line num="16" count="8" type="cond" truecount="1" falsecount="1"/>
+      <line num="19" count="8" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="stmt"/>
+      <line num="22" count="8" type="stmt"/>
+      <line num="29" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="41" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="62" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="65" count="2" type="stmt"/>
+      <line num="68" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="75" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

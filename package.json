@@ -1,0 +1,24 @@
+{
+  "name": "practic-1",
+  "version": "1.0.0",
+  "description": "PRG fitness app, застосунок, який вимірює ваші фізичні параметри та доповнює тренування цікавими ігровими фічами.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladyslavMyrnyi-nure/Practic-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VladyslavMyrnyi-nure/Practic-1/issues"
+  },
+  "homepage": "https://github.com/VladyslavMyrnyi-nure/Practic-1#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
