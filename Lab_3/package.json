@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "name": "lab_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Game.test.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
