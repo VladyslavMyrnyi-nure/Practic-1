@@ -1,0 +1,34 @@
+name: Lab 3 Continuous Integration
+
+# Налаштовуємо тригери (події, на які реагує система)
+on:
+  push:
+    branches:
+      - feature/Zadorozhnyi  # Запускати тільки при пуші у твою гілку
+    paths:
+      - 'Lab_3/**'      # Запускати тільки якщо змінилися файли у папці Lab_3
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest  # Використовуємо Operating System (Операційна система) Linux
+
+    steps:
+      # 1. Копіюємо код із репозиторію у віртуальну машину
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Встановлюємо середовище Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Встановлюємо залежності (тільки всередині папки Lab_3)
+      - name: Install dependencies
+        working-directory: ./Lab_3
+        run: npm install
+
+      # 4. Запускаємо тести (тільки всередині папки Lab_3)
+      - name: Run tests with coverage
+        working-directory: ./Lab_3
+        run: npm test
