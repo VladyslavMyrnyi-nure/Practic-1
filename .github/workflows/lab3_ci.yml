@@ -6,7 +6,8 @@ on:
     branches:
       - feature/Bilous  # Запускати тільки при пуші у твою гілку 
     paths:
-      - 'Lab_3/**'      # Запускати тільки якщо змінилися файли у папці Lab_3
+      - 'Lab_3/**' # Запускати тільки якщо змінилися файли у папці Lab_3
+      - '.github/workflows/**'   
 
 jobs:
   test-and-coverage:
