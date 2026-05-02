@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "name": "laba3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resource.test.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
