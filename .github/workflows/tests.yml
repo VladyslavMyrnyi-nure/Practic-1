@@ -2,7 +2,7 @@ name: Unit Tests
  
 on:
   push:
-    branches: [ main, master, "feature**" ]
+    branches: [ main, master, "feature/**" ]
   pull_request:
     branches: [ main, master ]
  
@@ -14,38 +14,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
  
-      - name: Setup .NET 8
-        uses: actions/setup-dotnet@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          dotnet-version: '8.0.x'
+          node-version: '20.x'
  
-      - name: Restore dependencies
+      - name: Install dependencies
         working-directory: ./Laba3
-        run: dotnet restore CharacterLib.csproj
- 
-      - name: Restore test dependencies
-        working-directory: ./Laba3
-        run: dotnet restore CharacterLib.Tests.csproj
- 
-      - name: Build library
-        working-directory: ./Laba3
-        run: dotnet build CharacterLib.csproj --no-restore --configuration Release
- 
-      - name: Build tests
-        working-directory: ./Laba3
-        run: dotnet build CharacterLib.Tests.csproj --no-restore --configuration Release
+        run: npm install
  
       - name: Run tests with coverage
         working-directory: ./Laba3
-        run: >
-          dotnet test CharacterLib.Tests.csproj
-          --no-build
-          --configuration Release
-          /p:CollectCoverage=true
-          /p:CoverletOutputFormat=lcov
-          /p:CoverletOutput=./coverage/lcov.info
-          /p:Threshold=80
-          /p:ThresholdType=line
+        run: npx jest --coverage --coverageThreshold='{"global":{"lines":80}}'
  
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
