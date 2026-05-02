@@ -4,7 +4,7 @@ name: Lab 3 Continuous Integration
 on:
   push:
     branches:
-      - feature/Bilous  # Запускати тільки при пуші у твою гілку
+      - feature/Bilous  # Запускати тільки при пуші у твою гілку 
     paths:
       - 'Lab_3/**'      # Запускати тільки якщо змінилися файли у папці Lab_3
 
