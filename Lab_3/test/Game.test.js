@@ -7,6 +7,9 @@ describe('Тестування класу Game', () => {
     game = new Game(101);
   });
 
+
+  //метод start()
+
   test('TC-01: Успішний старт гри (Позитивний)', () => {
     // Arrange (Підготувати)
     // Act (Виконати)
@@ -22,6 +25,9 @@ describe('Тестування класу Game', () => {
     // Act & Assert
     expect(() => game.start()).toThrow("Гра вже триває");
   });
+
+
+  //метод updateScore()
 
   test('TC-03: Додавання коректних очок (Позитивний)', () => {
     // Arrange
@@ -71,6 +77,9 @@ describe('Тестування класу Game', () => {
     expect(() => game.updateScore(10)).toThrow("гра не активна");
   });
 
+
+  //метод end()
+  
   test('TC-09: Успішне завершення гри (Позитивний)', () => {
     // Arrange
     game.start();
